@@ -1,11 +1,11 @@
 const express = require('express')
-const users = require('./USERS_DATA.json')
 const app = express()
 const port = 3000
 
+const users = require('MOCK_DATA')
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
-  console.log(users)
 })
 
 app.listen(port, () => {
